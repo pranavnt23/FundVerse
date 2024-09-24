@@ -1,166 +1,65 @@
-/* Remove default margin and padding from body and html */
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: inherit; /* Ensure all elements respect the box model */
-}
-
-/* Global App Styles */
-.App {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #16a4cd; /* Vibrant background color */
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-
-/* Remove any gaps on top and sides of the header */
-.App-header 
-{
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-  margin: 0; /* Remove any default margins */
-  text-align: center;
-  width: 100vw; /* Full viewport width */
-  box-sizing: border-box;
-}
-
-h1 
-{
-  margin: 0; /* Remove any default margin around the heading */
-}
-
-/* Navbar Styling */
-.navbar {
+.fundverse-header {
   display: flex;
-  justify-content: center;
-  background-color: #1f75cc; /* Navbar background color */
-  padding: 10px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  font-weight: bold;
+  background-color: #DDD0C8; /* Add the color here */
 }
 
-/* Hover effect for navbar links */
-.navbar a:hover {
-  background-color: #0f5086; /* Darker shade on hover */
-}
-
-/* Slideshow Styling */
-.slideshow {
-  margin: 20px auto;
-  width: 50%;
-  height: 200px; /* Set a fixed height */
-  background-color: #fff;
+.logo-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  position: relative;
 }
 
-.slide h2 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+.logo-section img {
+  width: 100px; /* Adjust the logo size */
+  height: auto;
 }
 
-.slide p {
-  margin: 0;
-  font-size: 1rem;
+.fundverse-title {
+  font-family: 'Courier New', Courier, monospace; /* Monospace font style */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #333; /* Text color */
+  margin-left: 10px; /* Spacing between logo and text */
 }
 
-/* Previous and Next buttons */
-.prev-btn, .next-btn {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #333;
-  cursor: pointer;
-  transition: color 0.3s ease;
+.main-nav {
+  display: flex;
+  gap: 15px;
 }
 
-.prev-btn:hover, .next-btn:hover {
-  color: #555; /* Lighter color on hover */
-}
-
-/* Zoom effect on hover */
-.slide:hover {
-  transform: scale(1.05); /* Slightly increased scale on hover */
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Form Styling */
-.form-container {
-  margin: 20px;
-}
-
-.form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  margin: auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-input 
-{
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
+.main-nav a, .auth-section a {
+  text-decoration: none;
+  color: #333; /* Text color */
+  font-weight: bold;
+  padding: 10px 15px;
   border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-/* Button Styles */
-button 
-{
-  background-color: #28a745; /* Initial button color */
+.main-nav a:hover, .auth-section a:hover {
+  background-color: #4A4A4A;
   color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
-button:hover 
-{
-  background-color: #218838; /* Darker green on hover */
+.main-nav a:active, .auth-section a:active {
+  background-color: #DCA1A1;
 }
 
-p 
-{
-  margin: 10px 0;
+.auth-section a {
+  margin-left: 10px;
 }
 
-span 
-{
-  color: #007bff;
-  cursor: pointer;
-  transition: color 0.3s ease;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #DDD0C8; /* Background color for the entire body */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
 }
 
-span:hover 
-{
-  color: #0056b3; /* Darker blue on hover */
+.logo-section img {
+  background-color: transparent; /* Ensure the background of the image is transparent */
+  width: 100px; /* Your logo width */
+  height: auto;
+  border: none; /* Remove any default border */
 }
- 
