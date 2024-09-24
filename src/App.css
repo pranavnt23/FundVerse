@@ -17,7 +17,7 @@
 }
 
 .fundverse-title {
-  font-family: 'Poppins' ; /* Monospace font style */
+  font-family: 'Courier New', Courier, monospace; /* Monospace font style */
   font-size: 24px; /* Adjust font size as needed */
   color: #333; /* Text color */
   margin-left: 10px; /* Spacing between logo and text */
